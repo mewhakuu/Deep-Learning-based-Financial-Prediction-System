@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>页面未找到</title>
+    <style>
+        @keyframes gradientBackground {
+            0% {
+                background-color: #ee7752;
+            }
+            25% {
+                background-color: #e73c7e;
+            }
+            50% {
+                background-color: #23a6d5;
+            }
+            75% {
+                background-color: #23d5ab;
+            }
+            100% {
+                background-color: #ee7752;
+            }
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            animation: gradientBackground 10s ease infinite;
+            background-size: cover;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            max-width: 300px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            animation: fadeInZoom 0.5s ease forwards;
+        }
+
+        /* ...其他样式保持不变... */
+    </style>
+    <script>
+        // 设置5秒后自动跳转
+        setTimeout(function() {
+            window.location.href = 'index.html';
+        }, 5000);
+    </script>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1>404</h1>
+    </div>
+    <div class="subheader">
+        <h2>抱歉，您访问的页面不存在。</h2>
+    </div>
+    <div class="nginx">
+        <p>nginx</p>
+    </div>
+</div>
+</body>
+</html>

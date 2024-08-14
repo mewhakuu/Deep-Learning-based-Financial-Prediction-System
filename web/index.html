@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>用户注册与登录</title>
+  <style>
+    @keyframes buttonClick {
+      0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-5px);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes gradientBackground {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    body {
+      /* ...其他样式保持不变... */
+      animation: gradientBackground 15s ease infinite;
+    }
+
+    .login-btn:active, .register-btn:active {
+      /* 添加动画效果 */
+      animation: buttonClick 0.2s ease;
+    }
+
+    /* ...其他样式保持不变... */
+    @keyframes fadeInZoom {
+      from {
+        transform: scale(0.5);
+        opacity: 0;
+      }
+      to {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+      background-size: 400% 400%;
+      animation: gradientBackground 15s ease infinite;
+    }
+    .container {
+      max-width: 300px;
+      margin: 50px auto;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.8);
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      animation: fadeInZoom 0.5s ease forwards;
+    }
+    .login-btn, .register-btn {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: #007bff;
+      color: white;
+      cursor: pointer;
+      outline: none;
+    }
+    .login-btn:hover, .register-btn:hover {
+      background-color: #0056b3;
+    }
+    .login-btn:active, .register-btn:active {
+      animation: buttonClick 0.2s ease;
+    }
+    .register-btn {
+      margin-top: 20px; /* Adds space between the buttons */
+    }
+    .centered-btn-container {
+      text-align: center; /* Centers the register button */
+    }
+    input[type="text"], input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+    .hidden {
+      display: none;
+    }
+  </style>
+  <script>
+    function toggleForm() {
+      var form = document.getElementById('registerForm');
+      if (form.style.display === 'none' || form.style.display === '') {
+        form.style.display = 'block';
+      } else {
+        form.style.display = 'none';
+      }
+    }
+  </script>
+</head>
+<body>
+
+<div class="container">
+  <h2>登录</h2>
+  <form action="login.php" method="post">
+    <input type="text" name="username" placeholder="用户名" required>
+    <input type="password" name="password" placeholder="密码" required>
+    <input class="login-btn" type="submit" value="登录">
+  </form>
+
+  <div class="centered-btn-container">
+    <button class="register-btn" onclick="toggleForm()">注册</button>
+  </div>
+
+  <div id="registerForm" class="hidden">
+    <h2>注册</h2>
+    <form action="register.php" method="post">
+      <input type="text" name="username" placeholder="用户名" required>
+      <input type="password" name="password" placeholder="密码" required>
+      <input class="register-btn" type="submit" value="注册">
+    </form>
+  </div>
+</div>
+
+</body>
+</html>
