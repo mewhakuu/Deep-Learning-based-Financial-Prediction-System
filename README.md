@@ -26,7 +26,7 @@ cuda(optional)
 
 # 使用方法
 
-将系统源码文件夹内的文件部署到linux环境下通过streamlit run mainpage.py启动streamlit以提供可交互的网页(不嫌麻烦可以部署到windows环境)，nginx和mysql请自行部署。
+将系统源码文件夹内的文件部署到linux环境下通过命令streamlit run mainpage.py启动streamlit以提供可交互的网页(不嫌麻烦可以部署到windows环境)，nginx和mysql请自行部署。
 
 # 使用到的代码和参考的论文
 
@@ -68,7 +68,7 @@ Recommended to use environments.yml file for environment deployment, use the com
 
 # Usage
 
-Deploy the files in the system source folder to linux environment by streamlit run mainpage.py to start streamlit to provide interactive web pages (not too much trouble can be deployed to the windows environment), nginx and mysql please deploy by yourself.
+Deploy the files in the system source folder to a linux environment and start streamlit with the command streamlit run mainpage.py to provide interactive web pages (if you don't mind the trouble, you can deploy it to a windows environment), and please deploy nginx and mysql on your own.
 
 # Code used and papers referenced
 
