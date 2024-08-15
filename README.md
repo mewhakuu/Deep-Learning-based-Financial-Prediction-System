@@ -22,7 +22,7 @@ scikit-learn1.35.0
 
 cuda(optional)
 
-推荐使用requirements.txt文件进行环境部署
+推荐使用environments.yml文件进行环境部署,使用命令conda env create -f environment.yml进行环境安装,请自行配置anaconda环境！environments.yml文件中的name和prefix属性请更改成您自己的环境信息。
 
 # 使用方法
 
@@ -64,7 +64,7 @@ scikit-learn 1.35.0
 
 cuda(optional)
 
-It is recommended to use the requirements.txt file for environment deployment
+Recommended to use environments.yml file for environment deployment, use the command conda env create -f environment.yml environment installation, please configure your own anaconda environment! environments.yml file in the name and prefix attributes please change to your own environment! Please change the name and prefix attributes in the environments.yml file to your own environment information.
 
 # Usage
 
