@@ -2,7 +2,7 @@
 # $ conda create --name <env> --file <this file>
 # platform: linux-64
 #_libgcc_mutex=0.1=conda_forge
-_openmp_mutex=4.5=2_gnu
+#_openmp_mutex=4.5=2_gnu
 bzip2=1.0.8=h7f98852_4
 ca-certificates=2022.9.24=ha878542_0
 ld_impl_linux-64=2.39=hc81fddc_0
